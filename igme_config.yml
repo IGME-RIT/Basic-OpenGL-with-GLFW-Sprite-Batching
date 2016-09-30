@@ -1,0 +1,15 @@
+series: Basic OpenGL with GLFW
+title: Sprite Batching
+author:
+  name: David Erbelding
+  email: daviderbelding@gmail.com
+  github: https://github.com/Erbelding
+description: Render thousands of sprites in a single draw call with batching!
+language: C++
+tags:
+  - Graphics
+  - Optimization
+extra_resources:
+connections:
+  - series: Basic OpenGL with GLFW
+    title: Textures
