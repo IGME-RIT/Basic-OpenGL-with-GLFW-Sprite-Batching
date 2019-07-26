@@ -1,0 +1,13 @@
+Author: Niko Procopi 2019
+
+Include: (C++ -> General -> Additional Directories)
+$(SolutionDir)\..\External Libraries\glm;$(SolutionDir)\..\External Libraries\GLFW\include;$(SolutionDir)\..\External Libraries\GLEW\include;$(SolutionDir)\..\External Libraries\FreeImage\Dist\x32;%(AdditionalIncludeDirectories)
+
+Preprocessors: (C++ -> Preprocessor -> Definitions)
+_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)
+
+Lib:(Linker -> General -> Additional Directories) (halfway down page)
+$(SolutionDir)\..\External Libraries\GLFW\lib-vc2015;$(SolutionDir)\..\External Libraries\GLEW\lib\Release\Win32;$(SolutionDir)\..\External Libraries\FreeImage\Dist\x32;%(AdditionalLibraryDirectories)
+
+Links: (Linker->Input) (dynamic link)
+glfw3.lib;glew32.lib;FreeImage.lib;opengl32.lib;%(AdditionalDependencies)
